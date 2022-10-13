@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabel CSS</title>
+</head>
+<style>
+  body {
+    background-color: #eee;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  h1 {
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  h1:hover {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+  }
+
+  table {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table th,
+  table td {
+    border: 2px solid #62448d;
+    text-align: center;
+    padding: 10px;
+  }
+
+  table th {
+    background-color: rgb(155, 24, 216);
+  }
+
+  table tr:nth-child(even) {
+    background-color: #7953bc;
+  }
+
+  table tr:hover {
+    background-color: rgb(148, 13, 148);
+  }
+
+  .nama:hover {
+    cursor: pointer;
+  }
+
+  .alamat:hover {
+    cursor: pointer;
+  }
+
+  .kembali {
+    background-color: rgb(255, 0, 191);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+  }
+
+  .kembali:hover {
+    cursor: pointer;
+    background-color: rgb(102, 4, 90);
+  }
+
+  .hapus {
+    background-color: rgb(6, 194, 94);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+  }
+
+  .hapus:hover {
+    cursor: pointer;
+    background-color: rgb(139, 0, 0);
+  }
+</style>
+</head>
+
+<body>
+
+  <h1>5 kawan terbaikku di IKMI</h1>
+
+  <table>
+    <tr>
+      <th>No.</th>
+      <th>Nama</th>
+      <th>Alamat</th>
+      <th>Aksi</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Abubakar Shidiq</td>
+      <td>Brebes</td>
+      <td><button class="hapus">Delete</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Olanda</td>
+      <td>Tengah Tani</td>
+      <td><button class="hapus">Delete</button></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Achmad Faouzi</td>
+      <td>Panguragan</td>
+      <td><button class="hapus">Delete</button></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Aji Susanto</td>
+      <td>Palimanan</td>
+      <td><button class="hapus">Delete</button></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Aldiyansyah Kurniawan</td>
+      <td>Depok</td>
+      <td><button class="hapus">Delete</button></td>
+    </tr>
+  </table>
+  <div class="tombol-back">
+    <a onclick="alert('Balik ke profil saya?')" href="../index.html">Menu Utama</a>
+  </div>
+</body>
+
+</html>

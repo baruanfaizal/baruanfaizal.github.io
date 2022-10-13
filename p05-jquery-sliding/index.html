@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Jquery Slide</title>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="flip">Jungkat-Jungkit</div>
+    <div id="panel">
+        Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,
+        Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,
+        Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!,Pencet!.
+    </div>
+
+</body>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideUp("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="flip">Asyik</div>
+    <div id="panel">Pencet, Aku Hilang!</div>
+
+</body>
+<a onclick="alert('Balik ke profil saya?')" href="../index.html">Menu Utama</a>
+</html>

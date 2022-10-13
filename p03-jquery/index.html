@@ -1,0 +1,176 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Table CSS Jquery</title>
+</head>
+<style>
+  body {
+    background-color: #eee;
+  }
+
+  h1 {
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  h1:hover {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+  }
+
+  table {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table th,
+  table td {
+    border: 2px solid #62448d;
+    text-align: left;
+    padding: 10px;
+  }
+
+  table th {
+    background-color: rgb(155, 24, 216);
+
+  }
+
+  h1 {
+    text-align: left;
+    margin-top: -10px;
+  }
+
+  h2 {
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #7953bc;
+  }
+
+  table tr:hover {
+    background-color: rgb(148, 13, 148);
+  }
+
+  .nama:hover {
+    cursor: pointer;
+  }
+
+  .alamat:hover {
+    cursor: pointer;
+  }
+
+  .Menu Utana {
+    background-color: rgb(255, 0, 191);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+  }
+
+  .Menu Utana:hover {
+    cursor: pointer;
+    background-color: rgb(102, 4, 90);
+  }
+
+  .delete {
+    background-color: rgb(6, 194, 94);
+    text-align: left;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+  }
+
+  .delete:hover {
+    cursor: pointer;
+    background-color: rgb(139, 0, 0);
+  }
+</style>
+
+<body>
+  <h1>5 kawan terbaikku di IKMI</h1>
+
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>Alamat</th>
+      <th>Aksi</th>
+    </tr>
+    <tr id="baris__1">
+      <td>1</td>
+      <td class="nama">Abubakar Shidiq</td>
+      <td class="alamat">Brebes</td>
+      <td class="delete" id="delete__1">Delete</td>
+    </tr>
+    <tr id="baris__2">
+      <td>2</td>
+      <td class="nama">Olanda</td>
+      <td class="alamat">Tengah Tani</td>
+      <td class="delete" id="delete__2">Delete</td>
+    </tr>
+    <tr id="baris__3">
+      <td>3</td>
+      <td class="nama">Achmad Faouzi</td>
+      <td class="alamat">Panguragan</td>
+      <td class="delete" id="delete__3">Delete</td>
+    </tr>
+    <tr id="baris__4">
+      <td>4</td>
+      <td class="nama">Aji Susanto</td>
+      <td class="alamat">Palimanan</td>
+      <td class="delete" id="delete__4">Delete</td>
+    </tr>
+    <tr id="baris__5">
+      <td>5</td>
+      <td class="nama">Aldiyansyah Kurniawan</td>
+      <td class="alamat">Depok</td>
+      <td class="delete" id="delete__5">Delete</td>
+    </tr>
+  </table>
+  <a href="../index.html"> Menu Utana </a>
+  <script>
+    $(document).ready(function () {
+      $('.nama').click(function () {
+        let penyebut = $(this).text();
+        let hasil = prompt('Ganti nama dikolom ini?', penyebut);
+        if (!hasil) return;
+        {
+          $(this).text(hasil);
+        }
+      });
+
+      $('.alamat').click(function () {
+        let penyebut = $(this).text();
+        let hasil = prompt('Ganti alamat dikolom ini?', penyebut);
+        if (!hasil) return;
+        {
+          $(this).text(hasil);
+        }
+      });
+      $('.delete').click(function () {
+        let serius = confirm('Hapus baris?');
+        if (!serius) return;
+        let id = $(this).prop('id');
+
+        let rid = id.split('__');
+        let baris_ke = rid[1];
+        $('#baris__' + baris_ke).slideUp();
+      });
+    });
+  </script>
+</body>
+
+</html>

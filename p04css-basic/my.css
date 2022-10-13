@@ -1,0 +1,145 @@
+body {
+    background-color: #eee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+h1:hover {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+table th, table td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+table th {
+    background-color: yellow;
+}
+
+table tr {
+    background-color: white;
+}
+
+table tr:hover {
+    background-color: lightblue;
+}
+
+.nama:hover {
+    cursor: pointer;
+}
+
+.alamat:hover {
+    cursor: pointer;
+}
+
+.kembali {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.kembali:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+
+.hapus {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.hapus:hover {
+    cursor: pointer;
+    background-color: darkred;
+
+}
+body {
+    font-family: sans-serif;
+}
+h1{
+    text-shadow: 2px 2px #df6127b0;
+}
+fieldset{
+    background-color: silver;
+
+}
+h4,ol{
+    color: red;
+}
+h5 {
+    color: red;
+    text-align: left;
+}
+  h5:hover {
+    color: black;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  select {
+    transition: 0.1s;
+  }
+  select:hover {
+    background-color: rgb(240, 133, 210);
+  }
+  option {
+    transition: 0.1s;
+  }
+  option:hover {
+    background-color: rgb(240, 133, 195);
+  }
+  input {
+    transition: 0.1s;
+  }
+  
+  input:hover {
+    background-color: rgb(240, 133, 210);
+  }
+  textarea {
+    transition: 0.1s;
+  }
+  
+  textarea:hover {
+    background-color: rgb(197, 133, 240);
+  }
+  button {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: silver;
+    border-radius: 15px;
+    color: rgb(136, 114, 114);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  button:hover {
+    background-color: red;
+    color: aliceblue;
+  }
+  
